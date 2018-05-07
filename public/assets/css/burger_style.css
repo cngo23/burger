@@ -9,4 +9,7 @@ body {
    background-size: cover;
    }
 
-   
+* {
+    border: solid pink 3px;
+}
+
