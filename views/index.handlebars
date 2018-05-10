@@ -57,7 +57,16 @@
         <div class="col-md-12 text-center">
             <h2>Submit your burger order here!</h2>
 
-            <div class="row">
+            <form id="add" action="/burgers/add" method="POST">
+                <div class="input-group mb-3">
+                    <input name="text" class="form-control" placeholder="Burger Orders Go Here" aria-label="burger orders" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-success" type="submit">Place Order</button>
+                    </div>
+                </div>
+            </form>
+
+            {{!-- <div class="row">
                 <div class="col-md-12">
                     <form id="add" action="/burgers/add" method="POST">
                         <textarea name="burger_name" style="width:175px; height:30px;"></textarea>
@@ -65,7 +74,7 @@
                     </form>
 
                 </div>
-            </div>
+            </div> --}}
 
         </div>
     </div>
